@@ -35,7 +35,7 @@ $shibboleth_config[shibboleth::LINK_TEXT] = 'SWITCH AAI Login';
 /**
  * if true and there is a WAYF block it is displayed instead of the link. If false the link is displayed.
  */
-$shibboleth_config[PluginShibboleth::DISPLAY_WAYF] = true;      
+$shibboleth_config[PluginShibboleth::DISPLAY_WAYF] = false;
 
 
 /**
