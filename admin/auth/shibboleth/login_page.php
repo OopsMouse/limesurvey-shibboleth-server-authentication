@@ -17,18 +17,12 @@ require_once $root . '/common.php';
 require_once $root . '/admin/classes/core/sha256.php';
 require_once $root . '/admin/sessioncontrol.php'; //needed to create the session
 
-require_once dirname(__FILE__) . '/test.php';
-require_once dirname(__FILE__) . '/util.php';
-require_once dirname(__FILE__) . '/shibboleth.class.php';
-require_once dirname(__FILE__) . '/plugin.class.php';
-require_once dirname(__FILE__) . '/user_home.class.php';
-require_once dirname(__FILE__) . '/login.class.php';
-require_once dirname(__FILE__) . '/config.php';
+require_once dirname(__FILE__) . '/main.php';
 
 if (request('action') == 'login' || empty($user)) {
     PluginShibboleth::login();
 }
 
-redirect($rooturl . '/admin/admin.php');
+Header::Redirect($rooturl . '/admin/admin.php');
 
 ?>

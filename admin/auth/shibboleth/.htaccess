@@ -1,0 +1,7 @@
+<IfModule mod_shib> 
+    <files login_page.php>
+      AuthType shibboleth
+      ShibRequestSetting requireSession 1
+      require valid-user
+    </files>
+</IfModule>

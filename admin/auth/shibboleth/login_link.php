@@ -30,7 +30,7 @@ if (empty($result)) {
     $text = Shibboleth::get_link_text();
     $img = $rooturl . '/admin/auth/shibboleth/resources/buttonflat.gif';
 
-    $result = '<b><a href="' . $href . '"><img src="' . $img . '" alt="' . $text . '" /></a></b><br />';
+    $result = '<p width="100%;text-align=center;"><a  href="' . $href . '"><img src="' . $img . '" alt="' . $text . '" /></a></p><br />';
 }
 
 echo $result;

@@ -10,5 +10,9 @@
 
 //@todo:remove that
 
+//$_SERVER[AAI::UNIQUE_ID] = '3';
+//$_SERVER[AAI::FIRSTNAME] = 'firstname';
+//$_SERVER[AAI::LASTNAME] = 'lastname';
+//$_SERVER[AAI::EMAIL] = 'firstname.lastname@institution.orgss';
 
 ?>
