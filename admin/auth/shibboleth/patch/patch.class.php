@@ -35,7 +35,7 @@ class Patch
 
     public static function check()
     {
-        return is_readable(self::get_path());
+        return is_writable(self::get_path());
     }
 
     /**
