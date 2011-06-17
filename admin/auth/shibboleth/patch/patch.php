@@ -11,6 +11,12 @@ Web page used to apply the patch.
         <?php
         require_once dirname(__FILE__) . '/../main.php';
         require_once dirname(__FILE__) . '/patch.class.php';
+        if(! Patch::check()){
+            echo 'The following file is not writable by the webserver. Ensure the webserver has enough rights and that the file has the correct attributes';
+            echo '<br/>';
+            echo Patch::get_path();
+            die;
+        }
         if (Patch::apply())
         {
             echo 'Patch success';

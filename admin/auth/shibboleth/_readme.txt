@@ -48,11 +48,14 @@ PLUGIN INSTALLATION
         http://shibboleth.internet2.edu/
         http://www.switch.ch/aai/support/serviceproviders/sp-access-rules.html
 
-3. Patch LimeSurvey. Navigate your browser to:
+3. Patch LimeSurvey. 
 
-    limesurvey/admin/auth/shibboleth/patch/patch.php
+	 1. Ensure the web server can write admin/admin.php (add enough rights to htppd and/or ensure the file has the correct rights 666). 
+	 2. Navigate your browser to: limesurvey/admin/auth/shibboleth/patch/patch.php
 
-   Or manually change admin/admin.php. See patch/patch.class.php for details.  
+   Or 
+	
+	 1. manually change admin/admin.php. See patch/patch.class.php for details.  
 
 4. (optional) If you don't use the Switch AAI config you must customize config.php.
 

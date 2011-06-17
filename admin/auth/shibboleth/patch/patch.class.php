@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Apply the patch.
  * 
@@ -31,6 +32,11 @@
  */
 class Patch
 {
+
+    public static function check()
+    {
+        return is_readable(self::get_path());
+    }
 
     /**
      * Apply the patch
