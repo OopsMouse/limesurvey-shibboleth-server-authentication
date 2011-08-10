@@ -9,6 +9,12 @@
  * @license GNU, http://www.gnu.org/licenses/gpl.html
  */
 
+/*
+ * @todo: remove that:
+ */
+
+//require_once dirname(__FILE__) . '/test/new_user.php';
+
 $root = dirname(dirname(dirname(dirname(__FILE__))));
 
 require_once $root . '/classes/core/startup.php';

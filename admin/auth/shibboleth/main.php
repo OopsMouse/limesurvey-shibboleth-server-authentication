@@ -20,5 +20,4 @@ require_once dirname(__FILE__) . '/db/user_home.class.php';
 require_once dirname(__FILE__) . '/lib/login.class.php';
 require_once dirname(__FILE__) . '/config.php';
 
-require_once dirname(__FILE__) . '/test.php';
 ?>

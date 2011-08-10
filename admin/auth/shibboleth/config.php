@@ -42,14 +42,16 @@ $shibboleth_default_user = AAI::get_default_user();
 ///**
 // * Default values. Used upon first login when the user is created in the database.
 // */
-//$shibboleth_default = array();
-//$shibboleth_default[UserHome::CREATE_SURVEY] = false;
-//$shibboleth_default[UserHome::CREATE_USER] = false;
-//$shibboleth_default[UserHome::DELETE_USER] = false;
-//$shibboleth_default[UserHome::SUPERADMIN] = false;
-//$shibboleth_default[UserHome::CONFIGURATOR] = false;
-//$shibboleth_default[UserHome::MANAGE_TEMPLATE] = false;
-//$shibboleth_default[UserHome::MANAGE_LABEL] = false;
-//$shibboleth_default[UserHome::HTML_EDITOR_MODE] = $defaulthtmleditormode;
-//$shibboleth_default[UserHome::DATE_FORMAT] = true;
+
+$shibboleth_default_user[UserHome::CREATE_SURVEY] = true;
+
+//$shibboleth_default_user[UserHome::CREATE_USER] = false;
+//$shibboleth_default_user[UserHome::DELETE_USER] = false;
+//$shibboleth_default_user[UserHome::SUPERADMIN] = false;
+//$shibboleth_default_user[UserHome::CONFIGURATOR] = false;
+//$shibboleth_default_user[UserHome::MANAGE_TEMPLATE] = false;
+//$shibboleth_default_user[UserHome::MANAGE_LABEL] = false;
+//$shibboleth_default_user[UserHome::HTML_EDITOR_MODE] = $defaulthtmleditormode;
+//$shibboleth_default_user[UserHome::DATE_FORMAT] = true;
+
 ?>
